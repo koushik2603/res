@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/aboutus.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+  .nav-items {
+
+      justify-content: space-around;
+      background-color: black;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #fff;
+      padding: 35px 20px;
+    }
+
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }
+  </style>
+  <div style="background-color:black;">
+ <header class="header" >
+    <a href="/" class="logo">EasyLease</a>
+    <nav class="nav-items">
+      <a href="{% url 'login' %}">Login</a>
+      <a href="{% url 'signup2' %}">Register</a>
+    </nav>
+  </header>
+
+<section class="section-6">
+  <div class="heading">
+    <h1>We !</h1>
+  </div>
+  <div class="row">
+    <figure class="figure">
+      <img src="https://lh3.googleusercontent.com/syfDdTRNmZzDodUBx1udy2DmT0lK28olNMBAgB-Srjb4aseXZp8ziq0Zh5p_Q1XsfhwZaNBNF2JGBJgWdS7ikVtHto8LZaB_8fZtoevw-agHICuFTHkwWaRUQbFd9cYKF8wURsbluM7LcIZSMJCK4WY8wM1x3PAPv3Qq8z35NdJwO2xrQEWYodEdzJudoQPCi-Qn8_Rge1Ksl-CfiD3nHMZLweHdkOr-TwjX0zTi0TqEBQAaZ7q2-TKeUnHxaqq25At44EvytRWFNE-Na647gfQE-ZhnhiKoQrtdjtLFkFpDDjAyONxbV62MXUojVW6EHF_f1dSjZ8EDVux1YyJeOtDSqgSY4M5txP7lrKFEHQtlW8-oke2Hefi3o_tjc7Qw7lnAh83bnvn0HxBsBEuYFKH61IfOEL66XYzlCP-qMwtHdizD53l8PxxDgeSCHEWiEdmPnuipPCn_o87BnrtufwjEmH_joakexm8v-Fmr0pzzcmQf63AlA0I3EezN2pA-mAC0lm6VjGTLM8ELri0hfjDx4f9jzLOC3-JDxjQ-ONqWasAImsnZYlUuqzG3fGDOzQsK_-lQbmv3WCsYMmPm9MxTkm-wnswndcSK4lLI64LIHLfKO8MlAoK-5grnYs6qc32HegEnxhHVqQFeO-RDQriRiCDK7nZr8Yp4OXV_r8VS0nxGk-F9KLvwM9s9IhIaEn7L4GSUZz0QkUZ4fMDbBZfUl-0b1wC9wZWUiqIla_EVDPQpeZnOL_m3nnpb0aU7-G43Q735kk32P_Ebd5Sp-jPVmjguxVDcOM-hgS7-syaDEI1WAW57YpePMKSRVIpPHfYHOt_hkomzPAyjbaLh8HUxwGvDGE1epmzmId3jV8GA5wlx6Cu5EuFbENOZrsyneNMWIEtDEn0TXHtb0HxDz6c8k9Bn69gfkm5GttQI5oVa9pn7etBW-nIsY-Ee0tn1pLur7VIbZI_MAyMoqFuCREcCXNp6qgtJyjyGQBQbbEP28bDQlW5BjyyOQ-6gTyleOaB9ZWlk1yD0ldpAdLFfhVofqECvog=w745-h993-no?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" height="393" width="285">
+      <figcaption>
+        <h3>Bhanu Nimmala</h3>
+        <p>2nd Year <br>CSE(H)<br>KL UNIVERSITY</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    <figure class="figure">
+      <center><img src="static/images/me2.jpg" height="395" width="250"></center>
+      <figcaption>
+        <h3>Koushik Sarma</h3>
+        <p>2nd Year <br>CSE(H)<br>KL UNIVERSITY</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    <figure class="figure">
+      <img src="static/images/abdul.jpg" height="395" width="280">
+      <figcaption>
+        <h3>Abdul Azeez</h3>
+        <p>2nd Year <br>CSE(H)<br>KL UNIVERSITY</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+     <figure class="figure">
+      <img src="static/images/jskfix.jpg">
+      <figcaption>
+        <h3>Surya Kiran Jonnalagadda</h3>
+        <p>Faculty Mentor<br>Associate Professor, CSE(H)<br>KL UNIVERSITY</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+  </div>
+</section>
+       </div>
+
+
+
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</head>
+<body>
+
+<footer class="footer" style="background-color:black">
+    <div class="copy">&copy; 2022 EasyLease</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="/about">About</a>
+        <a href="/login">Login</a>
+        <a href="/signup2">Register</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="https://www.linkedin.com/pulse/easylease-koushik-sarma/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/+918341364906"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://youtu.be/gzlD_YnNIig"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+{% load static %}
+<style>
+/* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+</style>
+<html lang="en">
+ <header class="header">
+    <a href="#" class="logo">EasyLease</a>
+    <nav class="nav-items">
+
+      <a href="{% url 'aboutus' %}">About</a>
+      <a href="{% url 'login' %}">Login</a>
+    </nav>
+  </header>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signup2.css' %}">
+    <div class="login-box">
+  <h2>Signup</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required>
+      <label>First Name</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="" required>
+      <label>Last Name</label>
+    </div>
+    <div class="user-box">
+      <input type="email" name="" required>
+      <label>Email</label>
+    </div>
+    <div class="user-box">
+      <input type="number" name="" required>
+      <label>Mobile Number</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="" required>
+      <label>Username</label>
+    </div>
+
+    <div class="user-box">
+      <input type="password" name="" required>
+      <label>Password</label>
+    </div>
+    <a href="{% url 'login' %}">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <input type="submit" value="Submit" class="signInBtn-link">
+    </a>
+    <h5 style="color:white;">Already have an account  <a href="{% url 'login' %}" class="signInBtn-link">Sign In</a></h5>
+  </form>
+</div>
+</head>
+<body>
+
+</body>
+</html>
